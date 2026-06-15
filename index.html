@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaRoS Consulting Africa - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.8; color: #1a1a1a; background: #f8f9fa; font-size: 18px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        h1, h2, h3 { font-weight: 700; }
+        
+        /* Header */
+        header { background: #001f3f; color: white; padding: 20px 0; text-align: center; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 700; color: #8DC73F; }
+        
+        /* Nav */
+        nav { background: #001f3f; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav .container { display: flex; justify-content: center; }
+        nav a { color: white; text-decoration: none; padding: 15px 20px; font-weight: 600; transition: background 0.3s; font-size: 16px; }
+        nav a:hover, nav a.active { background: #8DC73F; color: white; }
+        
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #001f3f 0%, #003366 100%); color: white; padding: 80px 0; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+        .cta-button { display: inline-block; background: #8DC73F; color: white; padding: 15px 30px; text-decoration: none; font-weight: 700; border-radius: 5px; margin-top: 30px; transition: background 0.3s; }
+        .cta-button:hover { background: #e6c200; }
+        
+        /* Sections */
+        .section { padding: 60px 0; }
+        .section h2 { text-align: center; font-size: 2.8rem; color: #001f3f; margin-bottom: 40px; font-weight: 700; }
+        
+        /* Services Overview */
+        .services-overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .service-item { background: white; padding: 30px; text-align: center; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .service-item h3 { color: #001f3f; margin-bottom: 15px; }
+        .service-item p { color: #666; }
+        
+        /* Footer */
+        footer { background: #001f3f; color: white; text-align: center; padding: 20px 0; font-size: 16px; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .services-overview { grid-template-columns: 1fr; }
+            nav .container { flex-direction: column; }
+            nav a { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">MaRoS Consulting Africa</div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="clients.html">Clients</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Strategic Consulting for African Excellence</h1>
+            <p>Empowering businesses through capability building, market entry strategies, and operational excellence across East Africa.</p>
+            <a href="contact.html" class="cta-button">Get Started</a>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-overview">
+                <div class="service-item">
+                    <h3>Strategic Advisory</h3>
+                    <p>Market entry strategies, business model innovation, and organizational development.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Training & Development</h3>
+                    <p>TVET curriculum design, dual apprenticeship systems, and leadership programs.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Intermediation</h3>
+                    <p>Stakeholder engagement, partnership facilitation, and regulatory navigation.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Operational Excellence</h3>
+                    <p>Process optimization, ERP implementation, and lean methodology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MaRoS Consulting Africa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

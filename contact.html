@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaRoS Consulting Africa - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.8; color: #1a1a1a; background: #f8f9fa; font-size: 18px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        h1, h2, h3 { font-weight: 700; }
+        
+        /* Header */
+        header { background: #001f3f; color: white; padding: 20px 0; text-align: center; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 700; color: #8DC73F; }
+        
+        /* Nav */
+        nav { background: #001f3f; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav .container { display: flex; justify-content: center; }
+        nav a { color: white; text-decoration: none; padding: 15px 20px; font-weight: 600; transition: background 0.3s; font-size: 16px; }
+        nav a:hover, nav a.active { background: #8DC73F; color: white; }
+        
+        /* Sections */
+        .section { padding: 60px 0; }
+        .section h2 { text-align: center; font-size: 2.8rem; color: #001f3f; margin-bottom: 40px; font-weight: 700; }
+        
+        .contact-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .contact-info { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .contact-info h3 { color: #001f3f; margin-bottom: 20px; }
+        .contact-info p { margin-bottom: 15px; }
+        .contact-form { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: 500; color: #001f3f; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: 'Roboto', sans-serif; }
+        .form-group textarea { height: 120px; resize: vertical; }
+        .submit-btn { background: #8DC73F; color: white; padding: 15px 30px; border: none; border-radius: 4px; font-weight: 700; cursor: pointer; transition: background 0.3s; }
+        .submit-btn:hover { background: #e6c200; }
+        
+        /* Footer */
+        footer { background: #001f3f; color: white; text-align: center; padding: 20px 0; font-size: 16px; }
+        
+        @media (max-width: 768px) {
+            .contact-content { grid-template-columns: 1fr; }
+            nav .container { flex-direction: column; }
+            nav a { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">MaRoS Consulting Africa</div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="clients.html">Clients</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><strong>MaRoS Consulting Africa</strong></p>
+                    <p>Owner: Marco Schommer</p>
+                    <p>Kicukiro, #35 KK 29 ave, Kigali, Rwanda</p>
+                    <p><strong>Phone:</strong> +250 782 604 372</p>
+                    <p><strong>Email:</strong> <a href="mailto:marco.r.schommer@gmail.com">marco.r.schommer@gmail.com</a></p>
+                    <p><strong>TIN:</strong> 111404912</p>
+                    <p><strong>Bank:</strong> IM Bank | Account: 20024177002</p>
+                </div>
+                <div class="contact-form">
+                    <div class="p-6">
+                        <form id="contactForm" class="space-y-6">
+
+                            <!-- First Name -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">First Name <span class="text-red-500">*</span></label>
+                                <input type="text" required placeholder="First Name"
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500">
+                            </div>
+
+                            <!-- Last Name -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Last Name <span class="text-red-500">*</span></label>
+                                <input type="text" required placeholder="Last Name"
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500">
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
+                                <input type="email" required placeholder="Your email address"
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500">
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Message <span class="text-red-500">*</span></label>
+                                <textarea required rows="6" placeholder="Enter your message here..."
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 resize-y"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="pt-4">
+                                <button type="submit"
+                                        class="w-full py-4 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold text-lg rounded-xl transition-all duration-200">
+                                    SEND YOUR MESSAGE
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MaRoS Consulting Africa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

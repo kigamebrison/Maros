@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaRoS Consulting Africa - Clients</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.8; color: #1a1a1a; background: #f8f9fa; font-size: 18px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        h1, h2, h3 { font-weight: 700; }
+        
+        /* Header */
+        header { background: #001f3f; color: white; padding: 20px 0; text-align: center; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 700; color: #8DC73F; }
+        
+        /* Nav */
+        nav { background: #001f3f; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav .container { display: flex; justify-content: center; }
+        nav a { color: white; text-decoration: none; padding: 15px 20px; font-weight: 600; transition: background 0.3s; font-size: 16px; }
+        nav a:hover { background: #8DC73F; color: white; }
+        nav a.active { background: #8DC73F; color: white; }
+        
+        /* Sections */
+        .section { padding: 60px 0; }
+        .section h2 { text-align: center; font-size: 2.8rem; color: #001f3f; margin-bottom: 40px; font-weight: 700; }
+        
+        .clients-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .client-card { background: white; padding: 30px; text-align: center; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; }
+        .client-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        .client-logo { height: 100px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; }
+        .client-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .client-card h3 { color: #001f3f; margin-bottom: 15px; flex-grow: 1; }
+        .client-card p { color: #666; margin-bottom: 15px; font-size: 14px; }
+        .client-link { color: #8DC73F; text-decoration: none; font-weight: 600; display: inline-block; }
+        .client-link:hover { text-decoration: underline; color: #7ab32f; }
+        
+        /* Footer */
+        footer { background: #001f3f; color: white; text-align: center; padding: 20px 0; font-size: 16px; }
+        
+        @media (max-width: 768px) {
+            .clients-grid { grid-template-columns: 1fr; }
+            nav .container { flex-direction: column; }
+            nav a { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">MaRoS Consulting Africa</div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="clients.html" class="active">Clients</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="section">
+        <div class="container">
+            <h2>Our Clients & Partners</h2>
+            <div class="clients-grid">
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="https://themagnetinstitute.org/wp-content/uploads/2023/11/logo-1.png" alt="The Magnet Institute Logo">
+                    </div>
+                    <h3><a href="https://www.themagnetinstitute.com/" class="client-link" target="_blank">The Magnet Institute (TMI)</a></h3>
+                    <p>World-class training centre for SME upskilling in Rwanda</p>
+                    <p>Contact: info@themagnetinstitute.org | +250 788 123 456</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="https://www.swisscontact.org/documents/10156/3214951/swisscontact_logo.png" alt="Swisscontact Logo">
+                    </div>
+                    <h3><a href="https://www.swisscontact.org/" class="client-link" target="_blank">Swisscontact</a></h3>
+                    <p>TVET system development and dual-apprenticeship programs</p>
+                    <p>Contact: info@swisscontact.org | +41 44 454 17 17</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/200x100/001f3f/FFFFFF?text=BPN" alt="BPN Logo">
+                    </div>
+                    <h3><a href="https://www.bpn.rw/" class="client-link" target="_blank">Business Professionals Network (BPN)</a></h3>
+                    <p>SME coaching and entrepreneurship development</p>
+                    <p>Contact: info@bpn.rw | +250 786 130 387</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="https://www.s-ge.com/sites/all/themes/sge_theme/logo.svg" alt="Swiss Global Enterprise Logo">
+                    </div>
+                    <h3><a href="https://www.s-ge.com/" class="client-link" target="_blank">Swiss Global Enterprise (S-GE)</a></h3>
+                    <p>Market entry strategy and partner identification</p>
+                    <p>Contact: info@s-ge.com | +41 44 365 51 51</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/200x100/8DC73F/FFFFFF?text=AlphaSeeds" alt="AlphaSeeds Logo">
+                    </div>
+                    <h3><a href="https://alphaseeds.rw/" class="client-link" target="_blank">AlphaSeeds</a></h3>
+                    <p>Agricultural investment due diligence</p>
+                    <p>Contact: info@alphaseeds.com | +250 788 123 456</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Bulgari_logo.svg/1200px-Bulgari_logo.svg.png" alt="Bulgari Logo">
+                    </div>
+                    <h3><a href="https://www.bulgari.com/" class="client-link" target="_blank">Bulgari / LVMH</a></h3>
+                    <p>Luxury goods after-sales service excellence</p>
+                    <p>Contact: customerservice@bulgari.com | +39 06 696 0401</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/200x100/001f3f/FFFFFF?text=WOSTEP" alt="WOSTEP Logo">
+                    </div>
+                    <h3><a href="https://www.wostep.org/" class="client-link" target="_blank">WOSTEP</a></h3>
+                    <p>Global watchmaking education</p>
+                    <p>Contact: info@wostep.org | +1 202 123 4567</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="https://via.placeholder.com/200x100/8DC73F/FFFFFF?text=Rwanda+TVET" alt="Rwanda TVET Board Logo">
+                    </div>
+                    <h3><a href="https://www.rtb.rw/" class="client-link" target="_blank">Rwanda TVET Board</a></h3>
+                    <p>Public-sector leadership academy co-design</p>
+                    <p>Contact: info@rtb.rw | +250 788 123 456</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MaRoS Consulting Africa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

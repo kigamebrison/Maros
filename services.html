@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaRoS Consulting Africa - Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.8; color: #1a1a1a; background: #f8f9fa; font-size: 18px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        h1, h2, h3 { font-weight: 700; }
+        
+        /* Header */
+        header { background: #001f3f; color: white; padding: 20px 0; text-align: center; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 700; color: #8DC73F; }
+        
+        /* Nav */
+        nav { background: #001f3f; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav .container { display: flex; justify-content: center; }
+        nav a { color: white; text-decoration: none; padding: 15px 20px; font-weight: 600; transition: background 0.3s; font-size: 16px; }
+        nav a:hover, nav a.active { background: #8DC73F; color: white; }
+        
+        /* Sections */
+        .section { padding: 60px 0; }
+        .section h2 { text-align: center; font-size: 2.8rem; color: #001f3f; margin-bottom: 40px; font-weight: 700; }
+        
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card { background: white; padding: 40px 30px; text-align: center; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-icon { width: 80px; height: 80px; margin: 0 auto 20px; background: #8DC73F; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; }
+        .service-card h3 { color: #001f3f; margin-bottom: 15px; }
+        .service-card p { color: #666; line-height: 1.6; margin-bottom: 15px; }
+        .learn-more-btn { background: #8DC73F; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: 600; transition: background 0.3s; }
+        .learn-more-btn:hover { background: #7ab32f; }
+        .more-info { margin-top: 15px; padding-top: 15px; border-top: 1px solid #e0e0e0; }
+        .more-info p { margin-bottom: 10px; }
+        .more-info ul { list-style: disc; margin-left: 20px; }
+        .more-info li { margin-bottom: 5px; }
+        
+        /* Modal Styles */
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); }
+        .modal-content { background-color: white; margin: 10% auto; padding: 30px; border-radius: 8px; width: 80%; max-width: 600px; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .close-btn { position: absolute; top: 15px; right: 20px; font-size: 28px; font-weight: bold; color: #666; cursor: pointer; }
+        .close-btn:hover { color: #001f3f; }
+        .modal h3 { color: #001f3f; margin-bottom: 20px; text-align: center; }
+        .modal .service-icon { width: 60px; height: 60px; margin: 0 auto 20px; background: #8DC73F; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; }
+        
+        /* Footer */
+        footer { background: #001f3f; color: white; text-align: center; padding: 20px 0; font-size: 16px; }
+        
+        @media (max-width: 768px) {
+            .services-grid { grid-template-columns: 1fr; }
+            nav .container { flex-direction: column; }
+            nav a { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">MaRoS Consulting Africa</div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="clients.html">Clients</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Strategic Advisory</h3>
+                    <p>Market entry strategies, business model innovation, organizational capability building, M&A due diligence, and performance optimization.</p>
+                    <button class="learn-more-btn">Learn More</button>
+                    <div class="more-info" style="display: none;">
+                        <p>Our strategic advisory services help businesses navigate complex market landscapes. We provide comprehensive market analysis, competitive positioning, and growth strategies tailored to East African markets. Our expertise includes financial modeling, risk assessment, and partnership development to ensure sustainable business expansion.</p>
+                        <ul>
+                            <li>Market research and analysis</li>
+                            <li>Competitive landscape assessment</li>
+                            <li>Financial planning and modeling</li>
+                            <li>Risk management strategies</li>
+                            <li>Partnership and M&A advisory</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Training & Development</h3>
+                    <p>TVET curriculum design, dual apprenticeship systems, SME leadership programs, technical skills training, and impact measurement.</p>
+                    <button class="learn-more-btn">Learn More</button>
+                    <div class="more-info" style="display: none;">
+                        <p>We specialize in designing and implementing world-class training programs that bridge the skills gap in East Africa. Our TVET curriculum development follows international standards while incorporating local market needs. We create dual apprenticeship systems that combine theoretical learning with practical workplace experience.</p>
+                        <ul>
+                            <li>Curriculum development and accreditation</li>
+                            <li>Apprenticeship program design</li>
+                            <li>Leadership and management training</li>
+                            <li>Technical skills workshops</li>
+                            <li>Training impact evaluation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Intermediation</h3>
+                    <p>Stakeholder alignment, public-private partnership facilitation, supplier identification, regulatory compliance, and deal closing.</p>
+                    <button class="learn-more-btn">Learn More</button>
+                    <div class="more-info" style="display: none;">
+                        <p>Our intermediation services connect businesses with key stakeholders, partners, and opportunities across East Africa. We facilitate complex negotiations, ensure regulatory compliance, and help close strategic deals. Our extensive network and local expertise make us the perfect partner for market entry and expansion.</p>
+                        <ul>
+                            <li>Stakeholder mapping and engagement</li>
+                            <li>PPP facilitation and management</li>
+                            <li>Supplier and partner sourcing</li>
+                            <li>Regulatory navigation and compliance</li>
+                            <li>Negotiation and deal structuring</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Operational Excellence</h3>
+                    <p>ERP implementation, process optimization, lean methodology, and operational efficiency gains.</p>
+                    <button class="learn-more-btn">Learn More</button>
+                    <div class="more-info" style="display: none;">
+                        <p>We help organizations achieve operational excellence through systematic process improvements and technology implementation. Our lean methodology approach eliminates waste, improves efficiency, and enhances quality. We implement ERP systems that integrate all business processes for better decision-making and performance tracking.</p>
+                        <ul>
+                            <li>Process mapping and optimization</li>
+                            <li>ERP system selection and implementation</li>
+                            <li>Lean manufacturing consulting</li>
+                            <li>Quality management systems</li>
+                            <li>Performance measurement and KPIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MaRoS Consulting Africa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Modal functionality
+        const modal = document.getElementById('serviceModal');
+        const modalContent = document.getElementById('modalContent');
+        const closeBtn = document.querySelector('.close-btn');
+
+        // Close modal when clicking the close button
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside the modal content
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Handle Learn More button clicks
+        document.querySelectorAll('.learn-more-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const serviceCard = btn.closest('.service-card');
+                const serviceIcon = serviceCard.querySelector('.service-icon').textContent;
+                const serviceTitle = serviceCard.querySelector('h3').textContent;
+                const moreInfo = serviceCard.querySelector('.more-info');
+                
+                // Populate modal with service information
+                modalContent.innerHTML = `
+                    <div class="service-icon">${serviceIcon}</div>
+                    <h3>${serviceTitle}</h3>
+                    ${moreInfo.innerHTML}
+                `;
+                
+                // Show modal
+                modal.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaRoS Consulting Africa - About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.8; color: #1a1a1a; background: #f8f9fa; font-size: 18px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        h1, h2, h3 { font-weight: 700; }
+        
+        /* Header */
+        header { background: #001f3f; color: white; padding: 20px 0; text-align: center; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 2rem; font-weight: 700; color: #8DC73F; }
+        
+        /* Nav */
+        nav { background: #001f3f; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav .container { display: flex; justify-content: center; }
+        nav a { color: white; text-decoration: none; padding: 15px 20px; font-weight: 600; transition: background 0.3s; font-size: 16px; }
+        nav a:hover, nav a.active { background: #8DC73F; color: #001f3f; }
+        
+        /* Sections */
+        .section { padding: 60px 0; }
+        .section h2 { text-align: center; font-size: 2.8rem; color: #001f3f; margin-bottom: 40px; font-weight: 700; }
+        
+        .about-content { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center; }
+        .about-image img { width: 100%; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .about-text h3 { color: #001f3f; margin-bottom: 15px; margin-top: 25px; font-size: 1.5rem; }
+        .about-text p { margin-bottom: 18px; line-height: 1.8; color: #1a1a1a; }
+        .about-text a { color: #001f3f; font-weight: 600; text-decoration: underline; }
+        .about-text a:hover { color: #8DC73F; }
+        .download-btn { display: inline-block; background: #8DC73F; color: #001f3f; padding: 14px 28px; text-decoration: none; border-radius: 4px; font-weight: 700; transition: background 0.3s; margin-top: 10px; font-size: 16px; }
+        .download-btn:hover { background: #7ab32f; color: white; }
+        
+        /* Footer */
+        footer { background: #001f3f; color: white; text-align: center; padding: 20px 0; font-size: 16px; }
+        
+        @media (max-width: 768px) {
+            .about-content { grid-template-columns: 1fr; }
+            nav .container { flex-direction: column; }
+            nav a { padding: 10px; }
+            body { font-size: 16px; }
+            .section h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">MaRoS Consulting Africa</div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="clients.html">Clients</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="section">
+        <div class="container">
+            <h2>About MaRoS Consulting Africa</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/Profile photo_prof_2025 12 30.png" alt="Marco Schommer - Owner">
+                </div>
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>MaRoS Consulting Africa delivers end-to-end consulting solutions focused on capability building, training excellence, and market entry strategies across East Africa. Our approach combines rigorous methodology with agile execution to solve complex organizational challenges.</p>
+                    <h3>Owner: Marco Schommer</h3>
+                    <p>Location: Kicukiro, #35 KK 29 ave, Kigali, Rwanda</p>
+                    <p>Contact: +250 782 604 372 | <a href="mailto:marco.r.schommer@gmail.com">marco.r.schommer@gmail.com</a></p>
+                    <p>TIN: 111404912 | Bank: IM Bank | Account: 20024177002</p>
+                    <h3>Company Profile</h3>
+                    <p>Download our detailed company profile to learn more about our expertise, case studies, and service offerings.</p>
+                    <a href="MaRos consulting.pdf" download class="download-btn">Download Company Profile (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MaRoS Consulting Africa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
