@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MaRos.Client/MaRos.Client.csproj" />
+  <Project Path="MaRos/MaRos.csproj" />
+</Solution>

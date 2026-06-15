@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hbw9XoaFsUk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Brison\\Desktop\\MaRos\\MaRos\\MaRos\\MaRos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Brison\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.7\\microsoft.aspnetcore.app.internal.assets.10.0.7.nupkg.sha512",
+    "C:\\Users\\Brison\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\10.0.7\\microsoft.aspnetcore.components.webassembly.10.0.7.nupkg.sha512",
+    "C:\\Users\\Brison\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.server\\10.0.7\\microsoft.aspnetcore.components.webassembly.server.10.0.7.nupkg.sha512",
+    "C:\\Users\\Brison\\.nuget\\packages\\microsoft.dotnet.hotreload.webassembly.browser\\10.0.203\\microsoft.dotnet.hotreload.webassembly.browser.10.0.203.nupkg.sha512",
+    "C:\\Users\\Brison\\.nuget\\packages\\microsoft.jsinterop.webassembly\\10.0.7\\microsoft.jsinterop.webassembly.10.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
